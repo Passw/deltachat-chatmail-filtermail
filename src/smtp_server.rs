@@ -318,6 +318,7 @@ where
                 }
             }
 
+            data.shrink_to_fit();
             transaction.envelope.data = Bytes::from_owner(data);
 
             // Process the message
